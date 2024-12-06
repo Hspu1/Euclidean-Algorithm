@@ -9,6 +9,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.12"
 numba = "^0.60.0"
+setuptools = "^75.6.0"
 
 
 [build-system]
