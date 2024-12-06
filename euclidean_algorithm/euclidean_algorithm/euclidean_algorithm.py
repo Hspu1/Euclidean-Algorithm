@@ -1,9 +1,8 @@
 from numba import jit
 
-
-class EuclideanAlgorithmError(Exception):
-    def __str__(self):
-        return "Entered numbers must be greater than 0"
+from euclidean_algorithm.euclidean_algorithm.exceptions import (
+    EuclideanAlgorithmError
+)
 
 
 @jit(fastmath=True, cache=True)
