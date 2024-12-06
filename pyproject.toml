@@ -11,6 +11,7 @@ python = "^3.12"
 numba = "^0.60.0"
 setuptools = "^75.6.0"
 twine = "^6.0.1"
+travis = "^0.0.3"
 
 
 [build-system]

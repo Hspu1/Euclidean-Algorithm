@@ -758,6 +758,17 @@ test = ["build[virtualenv] (>=1.0.3)", "filelock (>=3.4.0)", "ini2toml[lite] (>=
 type = ["importlib_metadata (>=7.0.2)", "jaraco.develop (>=7.21)", "mypy (>=1.12,<1.14)", "pytest-mypy"]
 
 [[package]]
+name = "travis"
+version = "0.0.3"
+description = "Travis fake project"
+optional = false
+python-versions = "*"
+files = [
+    {file = "travis-0.0.3-py2.py3-none-any.whl", hash = "sha256:129d63df52e2779a3cbc81136781425ab870f6916dfdbe5782002006fc5f03e1"},
+    {file = "travis-0.0.3.tar.gz", hash = "sha256:00ed68e13d537d13dbb095b9228cb8f1c6d018252c72cec139215c07d4a5c80d"},
+]
+
+[[package]]
 name = "twine"
 version = "6.0.1"
 description = "Collection of utilities for publishing packages on PyPI"
@@ -802,4 +813,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "6eba3ce5e4795777eb448bd0c982d1b6e4ad96799d322d8c4c2c5b7d65e824f6"
+content-hash = "3732e340d2dc29c946406aa1ee087b7b2c1d91b31773e274c5a78f5caeffe9f6"
