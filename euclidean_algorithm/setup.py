@@ -1,6 +1,6 @@
 from setuptools import setup
 
-version = "1.0"
+version = "0.0.1"
 
 setup(
     name="euclidean_algorithm",
@@ -11,11 +11,10 @@ setup(
 
     description="A Python package, or rather a function, "
                 "to reproduce the Euclidean algorithm",
-    # long_description_content_type="text/markdown",
+    long_description_content_type="text/markdown",
 
     url="https://github.com/Hspu1/Euclidean-Algorithm",
-    download_url=f"https://github.com/Hspu1/"
-                 f"Euclidean-Algorithm/archive/{version}.zip",
+    download_url="https://github.com/Hspu1/Euclidean-Algorithm.git",
 
     license="MIT",
 
