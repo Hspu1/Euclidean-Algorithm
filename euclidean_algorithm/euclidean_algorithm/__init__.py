@@ -17,5 +17,5 @@ from .exceptions import (
 )
 
 __author__ = "Hspu1"
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __email__ = "rumyantsev1m0s1@gmail.com"

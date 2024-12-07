@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "euclidean-algorithm"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["Макс <rumyantsev1m0s1@gmail.com>"]
 license = "MIT"
