@@ -5,17 +5,12 @@
 """
 
 __all__ = (
-    "euclidean_algorithm",
-    "EuclideanAlgorithmValueError",
-    "EuclideanAlgorithmLengthError"
+    "euclidean_algorithm"
 )
 
 
 from .euclidean_algorithm import euclidean_algorithm
-from .exceptions import (
-    EuclideanAlgorithmValueError, EuclideanAlgorithmLengthError
-)
 
 __author__ = "Hspu1"
-__version__ = "0.1.1"
+__version__ = "0.1.2"
 __email__ = "rumyantsev1m0s1@gmail.com"

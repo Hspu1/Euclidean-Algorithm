@@ -1,35 +1,45 @@
 from numba import jit, TypingError
 
-from exceptions import (
-    EuclideanAlgorithmValueError, EuclideanAlgorithmLengthError
-)
+
+class EuclideanAlgorithmValueError(Exception):
+    def __str__(self):
+        return "Entered numbers must be greater than 0"
+
+
+class EuclideanAlgorithmLengthError(Exception):
+    def __str__(self):
+        return ("The number of digits in the entered numbers "
+                "should not exceed 20")
 
 
 @jit(fastmath=True, cache=True)
-def euclidean_algorithm_calculating(num1: int, num2: int
+def euclidean_algorithm_calculating(a: int, b: int
                             ) -> int | float | EuclideanAlgorithmValueError:
-    if num1 <= 0 or num2 <= 0:
+    if a <= 0 or b <= 0:
         raise EuclideanAlgorithmValueError
-    elif num2 % num1 == 0 or num1 % num2 == 0:
-        return num1 if num1 < num2 else num2
+    elif b % a == 0 or a % b == 0:
+        return a if a < b else b
+
+    if a > b:
+        a %= b
+    elif b > a:
+        b %= a
 
     while True:
-        if num1 > num2:
-            while num1 > num2:
-                num1 -= num2
-        elif num2 > num1:
-            while num2 > num1:
-                num2 -= num1
+        if a > b:
+            a -= b
+        elif b > a:
+            b -= a
 
-        if num1 == num2:
-            return num1
+        if a == b:
+            return a
 
 
 def euclidean_algorithm(num1: int, num2: int
                             ) -> int | float | EuclideanAlgorithmLengthError:
     try:
-        euclidean_algorithm_calculating(num1=num1, num2=num2)
+        euclidean_algorithm_calculating(a=num1, b=num2)
     except TypingError:
         raise EuclideanAlgorithmLengthError
     else:
-        return euclidean_algorithm_calculating(num1=num1, num2=num2)
+        return euclidean_algorithm_calculating(a=num1, b=num2)
