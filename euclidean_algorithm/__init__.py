@@ -8,8 +8,8 @@ __all__ = (
     "euclidean_algorithm"
 )
 
-from . import euclidean_algorithm
+from .euclidean_algorithm import euclidean_algorithm
 
 __author__ = "Hspu1"
-__version__ = "0.1.3"
+__version__ = "0.1.4"
 __email__ = "rumyantsev1m0s1@gmail.com"
