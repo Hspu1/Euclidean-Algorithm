@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "euclidean-algorithm"
-version = "0.1.4"
-description = ""
+version = "1.0.1"
+description = "Небольшая библиотека для вычисления НОД двух чисел (алгоритм Евклида)"
 authors = ["Макс <rumyantsev1m0s1@gmail.com>"]
 license = "MIT"
 readme = "README.md"

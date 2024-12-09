@@ -15,7 +15,8 @@
 > #### ***P.S: Если у вас не получилось активировать виртуальное окружение, то добавьте его в настройках интерпретатора или создайте новый проект с ним***
 ####
 ### ***Для установки пакета нужно прописать следующую команду в терминале:***
-### `pip install euclidean-algorithm`
+# `pip install euclidean-algorithm` - *через pip*
+# `poetry add euclidean_algorithm` - *через poetry*
 #
 ## ***Эксплуатация***
 ### ***Давайте узнаем НОД чисел 3444 и 983752:***
@@ -23,8 +24,8 @@
 > ***Импортируем основную функцию и передаём числа***
 >    ```python
 >    from euclidean_algorithm.euclidean_algorithm import euclidean_algorithm
->    
->    
+>
+>
 >    print(euclidean_algorithm(3444, 983752))
 >    ```
 >    ### ***НОД равен 28***
