@@ -11,5 +11,5 @@ __all__ = (
 from .euclidean_algorithm import euclidean_algorithm
 
 __author__ = "Hspu1"
-__version__ = "0.1.4"
+__version__ = "1.0.1"
 __email__ = "rumyantsev1m0s1@gmail.com"
